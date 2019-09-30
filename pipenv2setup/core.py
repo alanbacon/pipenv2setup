@@ -10,7 +10,8 @@ def readPipFile():
 def generateRequiresString(packageName, version):
 	if not type(version) == tomlkit.items.String:
 		raise ValueError(
-			f'cannot parse version number for package "{packageName}". Is it installed as an editable package?'
+			'cannot parse version number for package "' + packageName + '".' +
+			'Is it installed as an editable package?'
 		)
 	else:
 		if version == '*':
