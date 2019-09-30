@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
    name='pipenv2setup',
-   version='0.1.1',
+   version='0.1.2',
    description='Library to generate install_requires.py file from pipfile',
    long_description=long_description,
    long_description_content_type='text/markdown',
@@ -17,5 +17,10 @@ setup(
    packages=['pipenv2setup'],
    install_requires=[
       'tomlkit'
-   ]
+   ],
+   classifiers=[
+      "Programming Language :: Python :: 3",
+      "License :: OSI Approved :: MIT License"
+   ],
+   url='https://github.com/alanbacon/pipenv2setup'
 )
